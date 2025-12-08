@@ -1,16 +1,24 @@
-# React + Vite
+# Vite React JavaScript application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+created 12/8/2025
 
-Currently, two official plugins are available:
+```
+npm create vite@latest vanilla-react-client-app
+cd vanilla-react-client-app
+git init
+git add -A
+git commit -m "initial commit, vite react app created"
+git remote add origin git@github.com:ibbrett/Vite-SSR-React.git
+git push -u origin main
+git checkout -b dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## run
 
-## React Compiler
+```
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## readmes
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. [Create Vite React app](md/README-CREATE.md)
