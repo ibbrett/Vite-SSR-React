@@ -1,6 +1,9 @@
 ## Vite React JavaScript application
 
-- created 12/8/2025 [^1][^2]
+implementing SSR without Next.js
+
+- created traditional React client app 12/8/2025 [^1][^2]
+- modified for SSR, added server
 
 ### run
 
@@ -14,8 +17,6 @@ npm run dev
   - index.html --&gt; main.jsx --&gt; App.jsx
 - SSR React app [^4]
   - index.html --&gt; entry-client.js --&gt; App.jsx
-
----
 
 ## resources
 
