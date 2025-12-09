@@ -16,7 +16,7 @@ index.html --&gt; main.jsx --&gt; App.jsx
 
 #### index.html
 
-Vanilla Vite React application sends an content-less html file (nothing in root) and a main.jsx script
+Vanilla Vite React application sends a content-less file (nothing in root) and a main.jsx script
 
 - we first get empty white page
 - then main.jsx starts hydration, injecting App into #root
@@ -71,7 +71,12 @@ export function render() {
 
 ##### server.js [^4]
 
-copy server code
+copy server.js file code, the replace app.use '\*all' with handler code below ( loads index.html )
+
+- root will be \*
+- reads index.html, transform, it also calls entry-0server returning the render() function
+- replace &lt;!--ssr-outlet--&gt; with rendered html from App component
+- returns html response to client/browser
 
 ## readmes
 
