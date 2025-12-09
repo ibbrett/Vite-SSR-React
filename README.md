@@ -12,6 +12,8 @@ npm run dev
 
 ### pre-mods
 
+index.html --&gt; main.jsx --&gt; App.jsx
+
 #### index.html
 
 Vanilla Vite React application sends an content-less html file (nothing in root) and a main.jsx script
@@ -20,8 +22,8 @@ Vanilla Vite React application sends an content-less html file (nothing in root)
 - then main.jsx starts hydration, injecting App into #root
 
 ```
-&gt;div id="root"&lt;&gt;/div&lt;
-&gt;script type="module" src="/src/main.jsx"&lt;&gt;/script&lt;
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
 ```
 
 #### main.jsx
@@ -44,13 +46,32 @@ touch src/entry-client.js
 touch src/entry-server.js
 ```
 
-##### entry-server.js
+##### entry-client.js [^2]
 
-renderToString [^2]
+handles app hydration
 
-##### server.js
+```
+import ReactDom from "react-dom/client";
+import App from "./App";
 
-copy server code [^3]
+ReactDom.hydrateRoot(document.getElementById("root"), <App />);
+```
+
+##### entry-server.js [^3]
+
+returns HTML using renderToString
+
+```
+import { renderToString } from "react-dom/server";
+
+export function render() {
+  return renderToString(<App />);
+}
+```
+
+##### server.js [^4]
+
+copy server code
 
 ## readmes
 
@@ -60,5 +81,6 @@ copy server code [^3]
 ## resources
 
 [^1]: [SSR Source Structure](https://vite.dev/guide/ssr#source-structure)
-[^2]: [renderToString](https://react.dev/reference/react-dom/server/renderToString)
-[^3]: [Setting Up the Dev Server](https://vite.dev/guide/ssr#setting-up-the-dev-server)
+[^2]: [entry-client.js: Hydrating server-rendered HTML](https://react.dev/reference/react-dom/client/hydrateRoot#hydrating-server-rendered-html)
+[^3]: [entry-server.js: renderToString](https://react.dev/reference/react-dom/server/renderToString)
+[^4]: [server.js: Setting Up the Dev Server](https://vite.dev/guide/ssr#setting-up-the-dev-server)
