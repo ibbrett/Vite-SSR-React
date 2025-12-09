@@ -82,6 +82,8 @@ copy server.js file code, the replace app.use '\*all' with handler code below ( 
 
 1. [Create Vite React app](md/README-CREATE.md)
 1. [Commands to create app](md/README-CREATE-COMMANDS.md)
+1. [React client flow](md/README_CLIENT_FLOW.md)
+1. [React server (SSR) flow](md/README_SSR_FLOW.md)
 
 ## resources
 
