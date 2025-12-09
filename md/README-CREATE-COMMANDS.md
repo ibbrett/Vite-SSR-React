@@ -1,4 +1,4 @@
-# React + Vite app creation commands
+## React + Vite app creation commands
 
 ```
 npm create vite@latest vanilla-react-client-app

@@ -10,7 +10,7 @@ touch src/entry-client.js
 touch src/entry-server.js
 ```
 
-#### entry-client.js [^2]
+### entry-client.js [^2]
 
 handles app hydration
 
@@ -21,7 +21,7 @@ import App from "./App";
 ReactDom.hydrateRoot(document.getElementById("root"), <App />);
 ```
 
-#### entry-server.js [^3]
+### entry-server.js [^3]
 
 returns HTML using renderToString
 
@@ -33,7 +33,7 @@ export function render() {
 }
 ```
 
-#### server.js [^4]
+### server.js [^4]
 
 copy server.js file code, the replace app.use '\*all' with handler code below ( loads index.html )
 
@@ -44,7 +44,7 @@ copy server.js file code, the replace app.use '\*all' with handler code below ( 
 
 ---
 
-## resources
+### resources
 
 [^1]: [SSR Source Structure](https://vite.dev/guide/ssr#source-structure)
 [^2]: [entry-client.js: Hydrating server-rendered HTML](https://react.dev/reference/react-dom/client/hydrateRoot#hydrating-server-rendered-html)
