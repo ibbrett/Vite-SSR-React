@@ -18,7 +18,9 @@ npm run dev
 - SSR React app [^4]
   - index.html --&gt; entry-client.js --&gt; App.jsx
 
-## resources
+---
+
+### resources
 
 [^1]: [Create Vite React app](md/README-CREATE.md)
 [^2]: [Commands to create app](md/README-CREATE-COMMANDS.md)
