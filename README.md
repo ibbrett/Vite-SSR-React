@@ -13,11 +13,12 @@ npm run dev
 
 ### branches
 
-| branch                                                                              | description                     |
-| ----------------------------------------------------------------------------------- | ------------------------------- |
-| [main](https://github.com/ibbrett/Vite-SSR-React/tree/main)                         | current stable version          |
-| [dev](https://github.com/ibbrett/Vite-SSR-React/tree/dev)                           | under development               |
-| [ms-01-create-app](https://github.com/ibbrett/Vite-SSR-React/tree/ms-01-create-app) | milestone: initial app creation |
+| branch                                                                                        | description                     |
+| --------------------------------------------------------------------------------------------- | ------------------------------- |
+| [main](https://github.com/ibbrett/Vite-SSR-React/tree/main)                                   | current stable version          |
+| [dev](https://github.com/ibbrett/Vite-SSR-React/tree/dev)                                     | under development               |
+| [ms-01-create-app](https://github.com/ibbrett/Vite-SSR-React/tree/ms-01-create-app)           | milestone: initial app creation |
+| [ms-02-ssr-implemented](https://github.com/ibbrett/Vite-SSR-React/tree/ms-02-ssr-implemented) | milestone: ssr implemented      |
 
 ### behavior
 
