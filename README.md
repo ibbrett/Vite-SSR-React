@@ -3,13 +3,19 @@
 implementing SSR without Next.js
 
 - created traditional React client app 12/8/2025 [^1][^2]
-- modified for SSR, added server
+- modified for SSR, added server 12/10/2025
 
 ### run
 
 ```
 npm run dev
 ```
+
+### branches
+
+|[main](https://github.com/ibbrett/Vite-SSR-React/tree/main)|current stable version|
+|[dev](https://github.com/ibbrett/Vite-SSR-React/tree/dev)|under development|
+|[ms-01-create-app](https://github.com/ibbrett/Vite-SSR-React/tree/ms-01-create-app)|milestone: initial app creation|
 
 ### behavior
 
