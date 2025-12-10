@@ -16,7 +16,7 @@ npm run dev
 - traditional client React app [^3]
   - index.html --&gt; main.jsx --&gt; App.jsx
 - SSR React app [^4]
-  - index.html --&gt; entry-client.js --&gt; App.jsx
+  - index.html --&gt; entry-client.jsx --&gt; App.jsx
 
 ---
 

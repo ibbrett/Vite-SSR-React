@@ -1,16 +1,16 @@
 ## React server (SSR) flow
 
-index.html --&gt; entry-client.js --&gt; App.jsx
+index.html --&gt; entry-client.jsx --&gt; App.jsx
 
 ### create files, etc [^1]
 
 ```
 touch server.js
-touch src/entry-client.js
-touch src/entry-server.js
+touch src/entry-client.jsx
+touch src/entry-server.jsx
 ```
 
-### entry-client.js [^2]
+### entry-client.jsx [^2]
 
 handles app hydration
 
@@ -21,12 +21,13 @@ import App from "./App";
 ReactDom.hydrateRoot(document.getElementById("root"), <App />);
 ```
 
-### entry-server.js [^3]
+### entry-server.jsx [^3]
 
 returns HTML using renderToString
 
 ```
 import { renderToString } from "react-dom/server";
+import App from "./App";
 
 export function render() {
   return renderToString(<App />);
@@ -47,6 +48,6 @@ copy server.js file code, the replace app.use '\*all' with handler code below ( 
 ### resources
 
 [^1]: [SSR Source Structure](https://vite.dev/guide/ssr#source-structure)
-[^2]: [entry-client.js: Hydrating server-rendered HTML](https://react.dev/reference/react-dom/client/hydrateRoot#hydrating-server-rendered-html)
-[^3]: [entry-server.js: renderToString](https://react.dev/reference/react-dom/server/renderToString)
+[^2]: [entry-client.jsx: Hydrating server-rendered HTML](https://react.dev/reference/react-dom/client/hydrateRoot#hydrating-server-rendered-html)
+[^3]: [entry-server.jsx: renderToString](https://react.dev/reference/react-dom/server/renderToString)
 [^4]: [server.js: Setting Up the Dev Server](https://vite.dev/guide/ssr#setting-up-the-dev-server)
