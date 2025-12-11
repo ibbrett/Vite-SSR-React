@@ -72,6 +72,8 @@ export function render() {
 
 returns parent (root) _App_ component of the application
 
+---
+
 ### vite.config.js
 
 set ssr to true, add build to defaultConfig
