@@ -1,6 +1,7 @@
 ## React client flow
 
-<mark>index.html --&gt; main.jsx --&gt; App.jsx</mark>  
+<mark>index.html --&gt; main.jsx --&gt; App.jsx</mark>
+
 a traditional React application starts with an index file, which includes:
 
 - a _root_ div tag, and
