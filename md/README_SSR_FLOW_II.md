@@ -32,10 +32,19 @@ ReactDom.hydrateRoot(document.getElementById("root"), <App />);
 
 ### server.jsx
 
-calls entry-server
+- calls entry-server, which returns a render function
+- calls render function to get html
+- replace _root_ placeholder with redered html in template (index.html file)
 
 ```
+// load the server entry
 const { render } = await vite.ssrLoadModule("/src/entry-server.jsx");
+
+// render the app HTML
+const appHtml = await render(url);
+
+// inject the app-rendered HTML into the template.
+const html = template.replace(`<!--ssr-outlet-->`, () => appHtml);
 ```
 
 ### entry-server.jsx
@@ -60,6 +69,17 @@ function App() {
 ```
 
 returns parent (root) _App_ component of the application
+
+### vite.config.js
+
+set ssr to true, add build to defaultConfig
+
+```
+export default defineConfig({
+  plugins: [react()],
+  build: { ssr: true },
+});
+```
 
 ---
 
