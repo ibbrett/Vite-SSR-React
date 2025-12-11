@@ -1,6 +1,7 @@
 ## React ssr flow
 
-<mark>index.html --&gt; entry-client.jsx --&gt; App.jsx</mark>
+<mark>index.html --&gt; entry-client.jsx --&gt; App.jsx</mark>  
+<mark>server --&gt; entry-server.jsx --&gt; App.jsx</mark>
 
 our modified React application starts with an index file, which includes:
 
