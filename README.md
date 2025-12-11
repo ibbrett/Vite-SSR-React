@@ -33,5 +33,5 @@ npm run dev
 
 [^1]: [Create Vite React app](md/README-CREATE.md)
 [^2]: [Commands to create app](md/README-CREATE-COMMANDS.md)
-[^3]: [React client flow](md/README_CLIENT_FLOW.md)
-[^4]: [React server (SSR) flow](md/README_SSR_FLOW.md)
+[^3]: [client flow](md/README_CLIENT_FLOW.md) - classic hydration
+[^4]: [ssr flow](md/README_SSR_FLOW.md) - server with hybrid ssg and client hydration
