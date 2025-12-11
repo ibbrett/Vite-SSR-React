@@ -1,13 +1,17 @@
 ## React client flow
 
-<mark>index.html --&gt; main.jsx --&gt; App.jsx</mark>
+<mark>index.html --&gt; main.jsx --&gt; App.jsx</mark>  
+a traditional React application starts with an index file, which includes:
+
+- a _root_ div tag, and
+- a script tag taht calls _main_
 
 ### index.html
 
-Traditional React client application sends a content-less file (nothing in root) and a main.jsx script
+index is the entry into the app
 
-- we first get empty white page
-- then main.jsx starts hydration, injecting App into #root
+- _root_ div provides an empty container
+- _main_ script is called, renders App
 
 ```
 <div id="root"></div>
@@ -16,8 +20,16 @@ Traditional React client application sends a content-less file (nothing in root)
 
 ### main.jsx
 
-returns App
+main.jsx starts hydration, injecting App into #root
+
+```
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+```
 
 ### App.jsx
 
-returns App root/parent code
+returns parent (root) _App_ component of the application
