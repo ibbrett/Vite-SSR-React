@@ -81,6 +81,16 @@ export default defineConfig({
 });
 ```
 
+### package.json
+
+change dev script to load node server.js
+
+```
+"scripts": {
+    "dev": "node server",
+}
+```
+
 ---
 
 ### resources
