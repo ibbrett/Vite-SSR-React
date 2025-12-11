@@ -5,7 +5,7 @@
 a traditional React application starts with an index file, which includes:
 
 - a _root_ div tag, and
-- a script tag taht calls _main_
+- a script tag for _main.jsx_
 
 ### index.html
 
@@ -21,7 +21,7 @@ index is the entry into the app
 
 ### main.jsx
 
-main.jsx starts hydration, injecting App into #root
+createRoot() run, starts hydration, injecting App into #root
 
 ```
 createRoot(document.getElementById('root')).render(
