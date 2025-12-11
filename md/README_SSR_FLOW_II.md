@@ -30,6 +30,14 @@ hydrateRoot() run, starts hydration, injecting App into #root
 ReactDom.hydrateRoot(document.getElementById("root"), <App />);
 ```
 
+### App.jsx
+
+```
+function App() {
+  return <h1>Vite + React + SSR</h1>;
+}
+```
+
 ---
 
 ### server.jsx
@@ -59,14 +67,6 @@ return a render() function
 ```
 export function render() {
   return renderToString(<App />);
-}
-```
-
-### App.jsx
-
-```
-function App() {
-  return <h1>Vite + React + SSR</h1>;
 }
 ```
 
