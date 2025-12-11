@@ -1,6 +1,6 @@
 ## React client flow
 
-index.html --&gt; main.jsx --&gt; App.jsx
+<mark>index.html --&gt; main.jsx --&gt; App.jsx</mark>
 
 ### index.html
 
