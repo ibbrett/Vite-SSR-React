@@ -30,6 +30,8 @@ hydrateRoot() run, starts hydration, injecting App into #root
 ReactDom.hydrateRoot(document.getElementById("root"), <App />);
 ```
 
+---
+
 ### server.jsx
 
 - calls entry-server, which returns a render function
