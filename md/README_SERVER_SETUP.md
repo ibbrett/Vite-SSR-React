@@ -40,7 +40,7 @@ export function render() {
 copy server.js file code, the replace app.use '\*all' with handler code below ( loads index.html )
 
 - root will be \*
-- reads index.html, transform, it also calls entry-0server returning the render() function
+- reads index.html, transform, it also calls entry-server returning the render() function
 - replace &lt;!--ssr-outlet--&gt; with rendered html from App component
 - returns html response to client/browser
 
