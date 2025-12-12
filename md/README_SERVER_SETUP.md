@@ -1,6 +1,7 @@
-## React server (SSR) flow
+## React server setup
 
-index.html --&gt; entry-client.jsx --&gt; App.jsx
+<mark>index.html --&gt; entry-client.jsx --&gt; App.jsx</mark>  
+<mark>server --&gt; entry-server.jsx --&gt; App.jsx</mark>
 
 ### create files, etc [^1]
 
