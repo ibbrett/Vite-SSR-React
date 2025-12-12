@@ -40,11 +40,11 @@ function App() {
 
 ---
 
-### server.jsx, [setup](md/README_SERVER_SETUP.md)
+### server.jsx, [setup](README_SERVER_SETUP.md)
 
 - calls entry-server, which returns a render function
 - calls render function to get html
-- replace _root_ placeholder with redered html in template (index.html file)
+- replace _root_ placeholder with rendered html in template (index.html file)
 
 ```
 // load the server entry
